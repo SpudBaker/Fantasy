@@ -1,0 +1,16 @@
+<mat-toolbar color="primary" class="toolbar">
+  <span>Spud's Fantasy Football</span>
+  <!-- This fills the remaining space of the current row -->
+  <span class="example-fill-remaining-space"></span>
+  <span>Test Mode: &nbsp;
+    <mat-radio-group [(ngModel)]="state.testMode">
+      <mat-radio-button [value]=true>
+        Yes
+      </mat-radio-button>
+      &nbsp;&nbsp;
+      <mat-radio-button [value]=false>
+        No
+      </mat-radio-button>
+    </mat-radio-group>
+  </span>
+</mat-toolbar>
