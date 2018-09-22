@@ -1,4 +1,11 @@
 <mat-toolbar color="primary" class="toolbar">
   <span>Spud's Fantasy Football</span>
 </mat-toolbar>
-<router-outlet></router-outlet>
+<mat-grid-list cols="6" rowHeight="100px">
+  <mat-grid-tile colspan="1">
+      <app-status-aware-links></app-status-aware-links>
+  </mat-grid-tile>
+  <mat-grid-tile colspan="5">
+      <router-outlet></router-outlet>
+  </mat-grid-tile>
+</mat-grid-list>
