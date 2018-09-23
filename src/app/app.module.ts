@@ -5,8 +5,10 @@ import { AppRoutingModule } from './app-routing.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatGridListModule } from '@angular/material/grid-list';
+import { MatIconModule } from '@angular/material/icon';
 import { MatRadioModule } from '@angular/material/radio';
 import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatMenuModule } from '@angular/material/menu';
 
 // components
 import { AppComponent } from './app.component';
@@ -30,8 +32,10 @@ import { StateService } from './services/state/state.service';
     BrowserAnimationsModule,
     FormsModule,
     MatGridListModule,
+    MatIconModule,
     MatRadioModule,
     MatToolbarModule,
+    MatMenuModule,
     ReactiveFormsModule
   ],
   providers: [

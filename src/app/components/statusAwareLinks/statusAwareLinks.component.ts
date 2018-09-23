@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { StateService } from './../../services/state/state.service';
+import * as Globals from './../../globals' ;
 
 @Component({
   selector: 'app-status-aware-links',
@@ -7,9 +9,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class StatusAwareLinksComponent implements OnInit {
 
-  constructor() { }
+  constructor(private state: StateService) { }
 
   ngOnInit() {
+  }
+
+  getStatuses(): string[] {
+    return Object.keys(Globals.PlayerStatus);
+  }
+
+  selectedStatus(e) {
+   this.state.status = e;
   }
 
 }
