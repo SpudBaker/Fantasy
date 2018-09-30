@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { StateService } from './../../services/state/state.service';
 import * as Globals from './../../globals' ;
 
@@ -9,7 +10,7 @@ import * as Globals from './../../globals' ;
 })
 export class HeaderComponent implements OnInit {
 
-  constructor (private state: StateService) { }
+  constructor (private state: StateService, private router: Router) { }
 
   ngOnInit() {
   }
@@ -19,7 +20,16 @@ export class HeaderComponent implements OnInit {
   }
 
   selectedStatus(e) {
-   this.state.status = e;
+    this.state.status = e;
+    console.log(e);
+    switch (e) {
+      case 'LoggedOut':
+        this.router.navigate(['logged-out']);
+        break;
+      case 'BiddingForInitialSquad':
+        this.router.navigate(['bfis']);
+        break;
+   }
   }
 
 }

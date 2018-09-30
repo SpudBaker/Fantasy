@@ -1,11 +1,13 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { HomeComponent } from '../app/components/home/home.component';
+import { BiddingForInitialSquadComponent } from '../app/components/main/bfis/bidding_for_initial_squad.component';
+import { LoggedOutComponent } from '../app/components/main/logged_out/logged_out.component';
 
 const routes: Routes = [
-  { path: 'home', component: HomeComponent },
+  { path: 'bfis', component: BiddingForInitialSquadComponent },
+  { path: 'logged-out', component: LoggedOutComponent },
   { path: '',
-    redirectTo: '/home',
+    redirectTo: '/logged-out',
     pathMatch: 'full'
   }
 ];

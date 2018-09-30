@@ -13,7 +13,8 @@ import { MatMenuModule } from '@angular/material/menu';
 // components
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
-import { HomeComponent } from './components/home/home.component';
+import { BiddingForInitialSquadComponent } from './components/main/bfis/bidding_for_initial_squad.component';
+import { LoggedOutComponent } from './components/main/logged_out/logged_out.component'
 import { StatusAwareLinksComponent } from './components/statusAwareLinks/statusAwareLinks.component';
 
 // services
@@ -22,7 +23,8 @@ import { StateService } from './services/state/state.service';
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent,
+    BiddingForInitialSquadComponent,
+    LoggedOutComponent,
     HeaderComponent,
     StatusAwareLinksComponent
   ],

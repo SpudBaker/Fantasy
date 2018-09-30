@@ -1,1 +1,31 @@
+<div [ngSwitch]="getStatus()">
+  <div *ngSwitchCase="getGlobals().PlayerStatus.LoggedOut">
+    {{getStatus()}}
+  </div>
+  <div *ngSwitchCase="getGlobals().PlayerStatus.NotEnteredLeague">
+    {{getStatus()}}
+  </div>
+  <div *ngSwitchCase="getGlobals().PlayerStatus.BiddingForInitialSquad">
+    {{getStatus()}}
+  </div>
+  <div *ngSwitchCase="getGlobals().PlayerStatus.BiddingForInitialSquadInProgress">
+    {{getStatus()}}
+  </div>
+  <div *ngSwitchCase="getGlobals().PlayerStatus.Transfer">
+    {{getStatus()}}
+  </div>
+  <div *ngSwitchCase="getGlobals().PlayerStatus.TransferCalculationInProgress">
+    {{getStatus()}}
+  </div>
+  <div *ngSwitchCase="getGlobals().PlayerStatus.TeamSelection">
+    {{getStatus()}}
+  </div>
+  <div *ngSwitchCase="getGlobals().PlayerStatus.MatchesInProgress">
+    {{getStatus()}}
+  </div>
+  <div *ngSwitchCase="getGlobals().PlayerStatus.LeagueCompleted">
+    {{getStatus()}}
+  </div>
+</div>
+
 
